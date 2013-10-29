@@ -1,0 +1,197 @@
+html {
+    color: #3d3d3d;
+    font-family: "felt-tip-woman";
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+body {
+    background: #fff url(bg.png) top center no-repeat;
+}
+
+h1 {
+    color: #888;
+    font-size: 42px;
+    font-weight: 600;
+    line-height: 1.1em;
+    margin: 70px 0 42px;
+}
+
+h1 > span {
+    color: #000;
+    display: block;
+    font-size: 27px;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 0 0 0 !important;
+}
+
+#bottom h2 {
+    margin: 0 0 10px !important;
+}
+
+.dribbble {
+    color: rgb(233,75,137);
+    display: block;
+    font-style: normal;
+}
+
+.adobe {
+    color: rgb(255, 0, 0);
+    font-style: normal;
+}
+
+p {
+    font-weight: normal;
+    margin: 0 0 27px;
+}
+
+#top,
+#middle,
+#bottom {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#top {
+    margin-top: 280px;
+    opacity: 0;
+}
+
+#middle {
+    margin-top: 390px;
+}
+
+#bottom {
+    margin-top: 350px;
+    margin-bottom: 100px;
+}
+
+.request-form {
+    border: 1px solid #222;
+    display: block;
+    font-family: "felt-tip-woman";
+    font-size: 18px;
+    margin: 0 auto 9px;
+    text-align: center;
+    width: 300px;
+}
+
+@media only screen and (max-width: 320px) {
+
+body {
+    background: #fff url(bg.png) top center no-repeat;
+    background-size: 800px auto;
+}
+
+#top,
+#middle,
+#bottom {
+    box-sizing: border-box;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0 0;
+}
+
+    #top {
+        margin-top: 7em;
+    }
+    
+    #middle {
+        margin-top: 5.5em;
+    }
+    
+    #bottom {
+        margin-top: 5em;
+        margin-bottom: 0;
+    }
+    
+}
+
+/*
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) {
+    body {
+        background: #fff url(bg@2x.png) top center no-repeat;
+        background-size: 1267px 2103px;
+    }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+    body {
+        background: #fff url(bg@2x.png) top center no-repeat;
+        background-size: 800px auto;
+    }
+}
+*/
+
+/* Animation -------------------------------------------- */
+
+.animate {
+    opacity: 0;
+}
+
+.js-slideup{
+    animation-name: js-slideup;
+    -webkit-animation-name: js-slideup;
+    
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    
+    animation-timing-function: ease;
+    -webkit-animation-timing-function: ease;
+    
+    opacity: 1 !important;
+    -webkit-transition: opacity 1s ease;
+    transition: opacity 1s ease;
+}
+
+@keyframes js-slideup {
+    0% {
+        transform: translateY(100%);
+    }
+    50%{
+        transform: translateY(-8%);
+    }
+    65%{
+        transform: translateY(4%);
+    }
+    80%{
+        transform: translateY(-4%);
+    }
+    95%{
+        transform: translateY(2%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes js-slideup {
+    0% {
+        -webkit-transform: translateY(100%);
+    }
+    50%{
+        -webkit-transform: translateY(-8%);
+    }
+    65%{
+        -webkit-transform: translateY(4%);
+    }
+    80%{
+        -webkit-transform: translateY(-4%);
+    }
+    95%{
+        -webkit-transform: translateY(2%);
+    }
+    100% {
+        -webkit-transform: translateY(0%);
+    }
+}

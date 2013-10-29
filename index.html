@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Dribble Meetup at Adobe SF - November 20th 2013</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="//use.typekit.net/tkn0azv.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script type="application/javascript" src="http://codeorigin.jquery.com/jquery-2.0.3.min.js"></script>
+    
+    <!-- Eventbrite API Key: U6PQEXT5V7N3RUQMO2 !-->
+</head>
+<body>
+    <div id="top">
+<!--        <h1><i class="dribbble">Dribbble Meetup</i> at <i class="adobe">Adobe, SF</i><span>November the 5th 2013</span></h1>-->
+        <p>
+            Come talk design, while
+            enjoying some brown liquor,
+            mouth-watering delicacies and a few
+            other surprises... You’ll network your
+            heart out and leave with great swag.
+        </p>
+        <p>
+            Many thanks to Collective Ray for
+            initial inspiration and hook-ups 
+            to make this meetup happen!
+        </p>
+    </div>
+    <div id="middle" class="animate">
+        <h2>Riley Cran</h2>
+        <p>
+            Our speaker is a designer based in the 
+            Pacific Northwest specializing in Identity, Packaging
+            and Illustration. He also co-founded
+            Lost Type Co-op, a unique and popular pay-what-you-want font foundry.
+        </p>
+    </div>
+    <div id="bottom">
+        <h2>Would you like to join us?</h2>
+        <div style="width:100%; text-align:left;" ><iframe  src="http://www.eventbrite.com/tickets-external?eid=8619636565&ref=etckt&v=2" frameborder="0" height="214" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Online Ticketing</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://adobedribbble.eventbrite.com?ref=etckt">Dribbble Meetup at Adobe</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+        <!--
+                <form action="">
+                    <input class="request-form" type="text" placeholder="email">
+                    <input class="request-form" type="text" placeholder="dribbble id">
+                    <input class="request-form" type="submit" value="request an invite">
+                </form>
+        -->
+    </div>
+    
+    <script>
+        $(document).ready(function() {
+            $('#top').addClass("js-slideup");
+        });
+        
+        $(window).scroll(function() {
+            $('.animate').each(function(){
+//                if ($(window).width() > 767) {
+                    var imagePos = $(this).offset().top;
+                    var topOfWindow = $(window).scrollTop();
+                    if (imagePos < topOfWindow+800) {
+                        $(this).addClass("js-slideup");
+                    }
+//                } else {
+//                    $(this).css({"opacity" : "1"});
+//                }
+            });
+        });
+    </script>
+</body>
+</html>
